@@ -1,0 +1,150 @@
+{
+  "YouTube": {
+    "id": 1,
+    "name": "YouTube",
+    "total_users_worldwide": "2.5 billion users worldwide",
+    "image": "https://example.com/images/youtube.png",
+    "users": [
+      {
+        "id": 2,
+        "name": "Bob Smith"
+      },
+      {
+        "id": 6,
+        "name": "Fiona Martinez"
+      }
+    ]
+  },
+  "Netflix": {
+    "id": 2,
+    "name": "Netflix",
+    "total_users_worldwide": "238 million users worldwide",
+    "image": "https://example.com/images/netflix.png",
+    "users": [
+      {
+        "id": 1,
+        "name": "Alice Johnson"
+      },
+      {
+        "id": 4,
+        "name": "Diana Brown"
+      },
+      {
+        "id": 8,
+        "name": "Hannah Lewis"
+      }
+    ]
+  },
+  "Prime Video": {
+    "id": 3,
+    "name": "Prime Video",
+    "total_users_worldwide": "200 million users worldwide",
+    "image": "https://example.com/images/prime_video.png",
+    "users": [
+      {
+        "id": 1,
+        "name": "Alice Johnson"
+      },
+      {
+        "id": 5,
+        "name": "Ethan Lee"
+      }
+    ]
+  },
+  "Disney+": {
+    "id": 4,
+    "name": "Disney+",
+    "total_users_worldwide": "161.8 million users worldwide",
+    "image": "https://example.com/images/disney_plus.png",
+    "users": [
+      {
+        "id": 2,
+        "name": "Bob Smith"
+      },
+      {
+        "id": 4,
+        "name": "Diana Brown"
+      },
+      {
+        "id": 7,
+        "name": "George Wilson"
+      }
+    ]
+  },
+  "Hulu": {
+    "id": 5,
+    "name": "Hulu",
+    "total_users_worldwide": "48 million users worldwide",
+    "image": "https://example.com/images/hulu.png",
+    "users": [
+      {
+        "id": 2,
+        "name": "Bob Smith"
+      },
+      {
+        "id": 5,
+        "name": "Ethan Lee"
+      }
+    ]
+  },
+  "HBO Max": {
+    "id": 6,
+    "name": "HBO Max",
+    "total_users_worldwide": "76.8 million users worldwide",
+    "image": "https://example.com/images/hbo_max.png",
+    "users": [
+      {
+        "id": 3,
+        "name": "Charlie Davis"
+      },
+      {
+        "id": 6,
+        "name": "Fiona Martinez"
+      }
+    ]
+  },
+  "Apple TV+": {
+    "id": 7,
+    "name": "Apple TV+",
+    "total_users_worldwide": "40 million users worldwide",
+    "image": "https://example.com/images/apple_tv_plus.png",
+    "users": [
+      {
+        "id": 3,
+        "name": "Charlie Davis"
+      },
+      {
+        "id": 6,
+        "name": "Fiona Martinez"
+      }
+    ]
+  },
+  "Peacock": {
+    "id": 8,
+    "name": "Peacock",
+    "total_users_worldwide": "20 million users worldwide",
+    "image": "https://example.com/images/peacock.png",
+    "users": [
+      {
+        "id": 7,
+        "name": "George Wilson"
+      }
+    ]
+  },
+  "Paramount+": {
+    "id": 9,
+    "name": "Paramount+",
+    "total_users_worldwide": "43 million users worldwide",
+    "image": "https://example.com/images/paramount_plus.png",
+    "users": [
+      {
+        "id": 4,
+        "name": "Diana Brown"
+      },
+      {
+        "id": 8,
+        "name": "Hannah Lewis"
+      }
+    ]
+  }
+}
