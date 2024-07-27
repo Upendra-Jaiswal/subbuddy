@@ -24,8 +24,8 @@ const Card = () => {
           <div>
             <img
               className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-              src="/docs/images/blog/image-4.jpg"
-              alt=""
+              src=""
+              alt="image"
             />
             <div className="flex flex-col justify-between p-4 leading-normal">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -38,13 +38,13 @@ const Card = () => {
               <p className="mb-3 text-xs text-gray-800 dark:text-gray-500">
                 {carddata.users[0].name}
                 <br />
-                and {carddata.users.length} others are sharing this
+                and {carddata.users.length-1} others are sharing this
               </p>
             </div>
           </div>
           <div>
             <button className="bg-blue-600 rounded-md p-1 m-4 ">
-              <Link to="/users"  state={{ users: carddata.users }} >
+              <Link to="/users" state={{ users: carddata.users }}>
                 Subscbibe
               </Link>
             </button>
