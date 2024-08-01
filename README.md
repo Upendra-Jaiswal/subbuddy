@@ -3,13 +3,13 @@
 
 Welcome to SubBuddy, a web-based platform designed to facilitate the sharing of subscriptions. Our app allows users to:
 
-## Create an Account: Sign up and manage your profile.
+Create an Account: Sign up and manage your profile.
 
-## Share Subscriptions: Easily share your subscription services with others.
+ Share Subscriptions: Easily share your subscription services with others.
 
-## Chat with Sellers: Communicate directly with sellers for a smooth transaction.
+ Chat with Sellers: Communicate directly with sellers for a smooth transaction.
 
-## Receive Shared Subscription IDs: Get your subscription IDs promptly after making payments.
+ Receive Shared Subscription IDs: Get your subscription IDs promptly after making payments.
 
 License
 
