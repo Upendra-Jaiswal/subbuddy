@@ -1,18 +1,22 @@
 import carddatafile from "./carddata.json";
 import { Link } from "react-router-dom";
 
+// const checkimg=()=>{
+//   {Object.entries(carddatafile).map(([key, carddata]) => ()
+// }
+
 const Card = () => {
   return (
-    <div className="flex flex-row flex-wrap justify-content m-1 p-1 gap-4">
+    <div className="flex flex-row flex-wrap justify-content bg-gray-100 m-1 p-1 gap-4">
       {Object.entries(carddatafile).map(([key, carddata]) => (
         <div
           key={carddata.id}
-          className="flex flex-col items-stretch bg-white border border-gray-200 rounded-lg shadow-md w-64 h-96 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+          className="flex flex-col items-stretch bg-white border border-gray-200 rounded-lg shadow-2xl w-64 h-96 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
         >
           <div className="flex-shrink-0">
             <img
               className="object-cover w-full h-48 rounded-t-lg"
-              src={carddata.imageSrc || "default-image.jpg"} // Use a default image if none provided
+              src={carddata.image || "default-image.jpg"} // Use a default image if none provided
               alt={carddata.name}
             />
           </div>

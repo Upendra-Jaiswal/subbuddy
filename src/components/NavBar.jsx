@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Myprofile from "./MyProfile/Myprofile";
 
 const NavBar = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
+  const closeSidebar = () => {
+    setIsSidebarOpen(false);
+  };
+
   return (
     <div>
       {" "}
@@ -12,12 +23,12 @@ const NavBar = () => {
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              className="h-8"
+              src="/src/assets/subbuddylogo.jpg"
+              className="h-8 rounded-full"
               alt="Flowbite Logo"
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-             SubBuddy
+              <Link to="/">SubBuddy</Link>
             </span>
           </a>
           <button
@@ -55,54 +66,15 @@ const NavBar = () => {
                   <Link to="/">Landing Page</Link>
                 </a>
               </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >
-                  <div className="see-my-subscibed-subs">
-                    {" "}
-                    <button>
-                      <Link to="/subscribedsub">see my subscribed sub</Link>
-                    </button>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >
-                  <div className="see-my-created-subs">
-                    {" "}
-                    <button>
-                      {" "}
-                      <Link to="/mysub">see my created sub </Link>
-                    </button>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >
-                  <div className="create-my-sub">
-                    {/* redirects to create sub page */}
 
-                    <button>
-                      {" "}
-                      <Link to="createsub">create my sub </Link>
-                    </button>
-                  </div>
-                </a>
-              </li>
               <li>
                 <a
                   href="#"
+                  onClick={toggleSidebar}
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
-                  Contact
+                  <Myprofile isOpen={isSidebarOpen} onClose={closeSidebar} />{" "}
+                  Myprofile
                 </a>
               </li>
             </ul>
