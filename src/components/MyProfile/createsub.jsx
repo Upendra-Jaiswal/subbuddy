@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import carddatafile from "./Cards/carddata.json";
+import carddatafile from "../Cards/carddata.json";
 
 const Createsub = () => {
   const [startDate, setStartDate] = useState("");

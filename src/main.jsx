@@ -3,13 +3,13 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import Login from "./components/login.jsx";
-import Mysub from "./components/mysub.jsx";
-import Createsub from "./components/createsub";
+import Mysub from "./components/MyProfile/mysub.jsx";
+import Createsub from "./components/MyProfile/createsub";
 import Users from "./components/Users/Users.jsx";
 import Chat from "./components/Chat/Chat.jsx";
 
 import Signup from "./components/signup.jsx";
-import Subscribedsub from "./components/subscribedsub.jsx";
+import Subscribedsub from "./components/MyProfile/subscribedsub.jsx"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar.jsx";
