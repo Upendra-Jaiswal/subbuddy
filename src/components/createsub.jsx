@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import carddatafile from "./Cards/carddata.json";
 
 const Createsub = () => {
@@ -27,9 +27,11 @@ const Createsub = () => {
   };
 
   const handleStartDateChange = (e) => {
-    setStartDate(e.target.value);
+    const newStartDate = e.target.value;
+    setStartDate(newStartDate);
+
     // Update the minimum allowed date for the end date field
-    if (endDate && e.target.value > endDate) {
+    if (endDate && newStartDate > endDate) {
       setEndDate(""); // Clear end date if it's less than the new start date
     }
   };
@@ -37,6 +39,11 @@ const Createsub = () => {
   const handleEndDateChange = (e) => {
     setEndDate(e.target.value);
   };
+
+  // Calculate min end date based on start date
+  const minEndDate = startDate
+    ? new Date(startDate).toISOString().split("T")[0]
+    : "";
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100 p-4">
@@ -111,7 +118,7 @@ const Createsub = () => {
               id="end-date"
               value={endDate}
               onChange={handleEndDateChange}
-              min={startDate} // Set minimum allowed date based on start date
+              min={minEndDate} // Set minimum allowed date based on start date
               className="w-full border border-gray-300 rounded-md p-2"
             />
           </div>

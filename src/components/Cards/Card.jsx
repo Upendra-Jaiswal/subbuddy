@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Card = () => {
   return (
-    <div className="flex flex-row flex-wrap justify-content m-2 p-2 gap-4">
+    <div className="flex flex-row flex-wrap justify-content m-1 p-1 gap-4">
       {Object.entries(carddatafile).map(([key, carddata]) => (
         <div
           key={carddata.id}
