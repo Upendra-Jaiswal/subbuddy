@@ -13,6 +13,18 @@
         "id": 6,
         "name": "Fiona Martinez"
       }
+    ],
+    "plans": [
+      {
+        "name": "YouTube Free",
+        "price": "Free",
+        "description": "Ad-supported access to most content."
+      },
+      {
+        "name": "YouTube Premium",
+        "price": "$11.99/month",
+        "description": "Ad-free experience, offline downloads, and YouTube Music."
+      }
     ]
   },
   "Netflix": {
@@ -33,6 +45,23 @@
         "id": 8,
         "name": "Hannah Lewis"
       }
+    ],
+    "plans": [
+      {
+        "name": "Basic",
+        "price": "$9.99/month",
+        "description": "Standard definition, 1 screen at a time."
+      },
+      {
+        "name": "Standard",
+        "price": "$15.49/month",
+        "description": "High definition, 2 screens at a time."
+      },
+      {
+        "name": "Premium",
+        "price": "$19.99/month",
+        "description": "Ultra high definition, 4 screens at a time."
+      }
     ]
   },
   "Prime Video": {
@@ -48,6 +77,13 @@
       {
         "id": 5,
         "name": "Ethan Lee"
+      }
+    ],
+    "plans": [
+      {
+        "name": "Amazon Prime Membership",
+        "price": "$14.99/month or $139/year",
+        "description": "Includes Prime Video along with other Prime benefits like free shipping."
       }
     ]
   },
@@ -69,6 +105,18 @@
         "id": 7,
         "name": "George Wilson"
       }
+    ],
+    "plans": [
+      {
+        "name": "Disney+ Basic",
+        "price": "$7.99/month",
+        "description": "Standard definition with ads."
+      },
+      {
+        "name": "Disney+ Premium",
+        "price": "$10.99/month",
+        "description": "Ad-free experience and high definition."
+      }
     ]
   },
   "Hulu": {
@@ -84,6 +132,23 @@
       {
         "id": 5,
         "name": "Ethan Lee"
+      }
+    ],
+    "plans": [
+      {
+        "name": "Hulu with Ads",
+        "price": "$7.99/month",
+        "description": "Ad-supported access to Hulu’s library."
+      },
+      {
+        "name": "Hulu No Ads",
+        "price": "$14.99/month",
+        "description": "Ad-free experience with access to most content."
+      },
+      {
+        "name": "Hulu + Live TV",
+        "price": "$69.99/month",
+        "description": "Includes Hulu’s library plus live TV channels."
       }
     ]
   },
@@ -101,6 +166,18 @@
         "id": 6,
         "name": "Fiona Martinez"
       }
+    ],
+    "plans": [
+      {
+        "name": "HBO Max Ad-Lite",
+        "price": "$9.99/month",
+        "description": "Ad-supported access to HBO Max content."
+      },
+      {
+        "name": "HBO Max Ad-Free",
+        "price": "$15.99/month",
+        "description": "Ad-free access to HBO Max’s full library."
+      }
     ]
   },
   "Apple TV+": {
@@ -116,6 +193,13 @@
       {
         "id": 6,
         "name": "Fiona Martinez"
+      }
+    ],
+    "plans": [
+      {
+        "name": "Apple TV+",
+        "price": "$9.99/month",
+        "description": "Ad-free access to Apple TV+ original content."
       }
     ]
   },
@@ -133,6 +217,23 @@
         "id": 4,
         "name": "Diana Brown"
       }
+    ],
+    "plans": [
+      {
+        "name": "Peacock Free",
+        "price": "Free",
+        "description": "Ad-supported access to a limited selection of content."
+      },
+      {
+        "name": "Peacock Premium",
+        "price": "$5.99/month",
+        "description": "Ad-supported access to the full library."
+      },
+      {
+        "name": "Peacock Premium Plus",
+        "price": "$11.99/month",
+        "description": "Ad-free access to the full library."
+      }
     ]
   },
   "Paramount+": {
@@ -148,6 +249,18 @@
       {
         "id": 8,
         "name": "Hannah Lewis"
+      }
+    ],
+    "plans": [
+      {
+        "name": "Paramount+ Essential",
+        "price": "$5.99/month",
+        "description": "Ad-supported access to Paramount+ content."
+      },
+      {
+        "name": "Paramount+ Premium",
+        "price": "$11.99/month",
+        "description": "Ad-free experience and access to live TV and sports."
       }
     ]
   }

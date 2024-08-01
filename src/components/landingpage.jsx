@@ -5,7 +5,7 @@ const landingpage = () => {
   return (
     <div>
       <div className="all-cards-subs">
-        <h1 className="p-3"> all subs of all users</h1>
+        <h1 className="p-3"> </h1>
         <div>
           <Card />
         </div>

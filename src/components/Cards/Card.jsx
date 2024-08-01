@@ -1,51 +1,38 @@
-import React from "react";
 import carddatafile from "./carddata.json";
 import { Link } from "react-router-dom";
-import Users from "../Users/Users";
 
 const Card = () => {
   return (
-    <div className="flex flex-row flex-wrap justify-content m-2 p-2 gap-4 ">
-      {" "}
-      {/* {carddatafile.map((carddata) => ( */}
+    <div className="flex flex-row flex-wrap justify-content m-2 p-2 gap-4">
       {Object.entries(carddatafile).map(([key, carddata]) => (
         <div
           key={carddata.id}
-          className="flex flex-col items-center  bg-white border border-gray-200 rounded-lg shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+          className="flex flex-col items-stretch bg-white border border-gray-200 rounded-lg shadow-md w-64 h-96 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
         >
-          {" "}
-          <div>
-            {" "}
-            <a
-              href="#"
-              className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
-            />
-          </div>
-          <div>
+          <div className="flex-shrink-0">
             <img
-              className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-              src=""
-              alt="image"
+              className="object-cover w-full h-48 rounded-t-lg"
+              src={carddata.imageSrc || "default-image.jpg"} // Use a default image if none provided
+              alt={carddata.name}
             />
-            <div className="flex flex-col justify-between p-4 leading-normal">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                {carddata.name}
-              </h5>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                {carddata.total_users_worldwide}
-              </p>
-
-              <p className="mb-3 text-xs text-gray-800 dark:text-gray-500">
-                {carddata.users[0].name}
-                <br />
-                and {carddata.users.length-1} others are sharing this
-              </p>
-            </div>
           </div>
-          <div>
-            <button className="bg-blue-600 rounded-md p-1 m-4 ">
+          <div className="flex flex-col flex-grow p-2 leading-normal">
+            <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+              {carddata.name}
+            </h5>
+            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              {carddata.total_users_worldwide}
+            </p>
+            <p className="mb-3 text-xs text-gray-800 dark:text-gray-500">
+              {carddata.users[0].name}
+              <br />
+              and {carddata.users.length - 1} others are sharing this
+            </p>
+          </div>
+          <div className="flex-shrink-0 p-4">
+            <button className="bg-blue-600 text-white rounded-md px-4 py-1 w-full">
               <Link to="/users" state={{ users: carddata.users }}>
-                Subscbibe
+                Subscribe
               </Link>
             </button>
           </div>
